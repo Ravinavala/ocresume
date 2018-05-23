@@ -1,0 +1,12 @@
+﻿define('DB_NAME', 'dgreen_cwlive');
+
+
+
+/** MySQL database username */
+define('DB_USER', 'dgreen_tpc');
+
+
+
+/** MySQL database password */
+
+define('DB_PASSWORD', 'sn0wb0@rd83');

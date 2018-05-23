@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Reviewer Profile</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/customscroll.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/bootstrap-responsive-tabs.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="../assets/layouts/layout/css/style_b.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/style_t.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+    </head>
+    <!-- END HEAD -->
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white profile_page_content">
+        <div class="page-wrapper page_notification">
+            <!-- BEGIN HEADER -->
+            <div class="page-header navbar navbar-fixed-top">
+                <!-- BEGIN HEADER INNER -->
+                <div class="page-header-inner ">
+                    <!-- BEGIN LOGO -->
+                    <div class="page-logo">
+                        <a href="reviewer_dashboard.html">
+                            <img src="../assets/layouts/layout/img/logo_dashboard.png" alt="logo" class="logo-dashboard" /> </a>
+                        <div class="menu-toggler sidebar-toggler">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- END LOGO -->
+                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span></span>
+                    </a>
+                    <!-- END RESPONSIVE MENU TOGGLER -->
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+                    <div class="top-menu top_header">
+                        <ul class="nav navbar-nav pull-right">
+                            <!-- BEGIN NOTIFICATION DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class=""><img src="../assets/layouts/layout/img/bell_img.png" alt=""/></i>
+                                    <span class="badge badge-default"> 4 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                        <h3><span class="bold bold_pending">4 Pending</span> Notifications</h3>
+                                        <a href="reviewer_notification.html">View All</a>
+                                    </li>
+                                    <li>
+                                        <div class="noti_scroll">
+                                            <ul class="dropdown-menu-list scroller" style="height: 201px;" data-handle-color="#637283">
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 1</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 2</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 3</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 4</span>
+                                                    </a>
+                                                </li>                                        
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END NOTIFICATION DROPDOWN -->
+                            <!-- BEGIN INBOX DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                          
+                            <li class="dropdown dropdown-user">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img alt="" class="img-circle" src="../assets/layouts/layout/img/men_img.png" />
+                                    <span class="username username-hide-on-mobile john_doe"> John Doe </span>
+                                    <i class=""> <img src="../assets/layouts/layout/img/arrow.png" alt=""/></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+                                    <li>
+                                        <a href="reviewer_profile.html">
+                                            <i class="icon-user"></i> My Profile </a>
+                                    </li>
+                                    <li>
+                                        <a href="page_user_login_1.html">
+                                            <i class="icon-key"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- END USER LOGIN DROPDOWN -->
+                            <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            
+                            <!-- END QUICK SIDEBAR TOGGLER -->
+                        </ul>
+                    </div>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+                <!-- END HEADER INNER -->
+            </div>
+            <!-- END HEADER -->
+            <!-- BEGIN HEADER & CONTENT DIVIDER -->
+            <div class="clearfix"> </div>
+            <!-- END HEADER & CONTENT DIVIDER -->
+            <!-- BEGIN CONTAINER -->
+            <div class="page-container">
+                <!-- BEGIN SIDEBAR -->
+                <div class="page-sidebar-wrapper">
+                    <!-- BEGIN SIDEBAR -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <div class="page-sidebar navbar-collapse collapse">
+                        <!-- BEGIN SIDEBAR MENU -->
+                        <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                        <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                        <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                        <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                        <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                        <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                        <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                            <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                            <li class="sidebar-toggler-wrapper hide">
+                                <div class="sidebar-toggler">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <!-- END SIDEBAR TOGGLER BUTTON -->
+                            <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                            <li class="sidebar-search-wrapper">
+                                <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                                <!-- DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box -->
+                                <!-- DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box -->
+                                <form class="sidebar-search  " action="page_general_search_3.html" method="POST">
+                                    <a href="javascript:;" class="remove">
+                                        <i class="icon-close"></i>
+                                    </a>
+                                  
+                                </form>
+                                <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                            </li>
+                            <li class="nav-item start  open">
+                                <a href="reviewer_dashboard.html" class="nav-link nav-toggle">
+                                    <i class="icon-image-home"></i>
+                                    <span class="title">Dashboard</span> 
+                                </a>                           
+                            </li>
+<!--                            <li class="nav-item start active open">
+                                <a href="reviewer_profile.html" class="nav-link nav-toggle">
+                                    <i class="icon-student-profile"></i>
+                                    <span class="title">Reviewer Profile</span>
+                                    <span class="selected"></span>				
+                                </a>                          
+                            </li>-->
+                            <li class="nav-item start  open">
+                                <a href="reviewer_history.html" class="nav-link nav-toggle">
+                                    <i class="icon-history"></i>
+                                    <span class="title">History</span> 
+                                </a>                         
+                            </li>                  
+                        </ul>
+                        <!-- END SIDEBAR MENU -->
+                        <!-- END SIDEBAR MENU -->
+                    </div>
+                </div>
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN PAGE BAR -->
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <a href="reviewer_dashboard.html">Home</a>
+                                    <i class=""> <img src="../assets/layouts/layout/img/dot_img.png" alt=""/></i>
+                                </li>
+                                <li>
+                                    <span>My Profile</span>
+                                </li>
+                            </ul>
+                            <div class="dat_calender">
+                                <div class="page-toolbar">
+                                    <div class="input-group input-medium date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                        <span class="input-group-btn">
+                                            <button class="btn default" type="button" ></button>
+                                        </span>
+                                        <input type="text" class="form-control" readonly placeholder="September 29, 2016">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PAGE BAR -->
+                        <!-- BEGIN PAGE TITLE-->
+                        <h1 class="page-title"> My Profile
+                        </h1>
+                        <!-- END PAGE TITLE-->
+                        <!-- END PAGE HEADER-->
+                        <div class="student_profile">
+                            <div class="girl_profile men_profile">
+                                <img src="../assets/layouts/layout/img/men_reviwer.png" alt=""/>
+                            </div>
+                            <div class="profile_name">
+                                <h4>John Doe</h4>
+                                <span>Reviewer</span>
+                            </div>
+                        </div>
+                        <div class="profile_account">
+                            <div class="portlet light bordered profile">
+                                    <div class="portlet-title tabbable-line profile_border">
+                                        <div class="caption">
+                                            <i class="icon-bubbles font-dark hide"></i>
+                                            <span class="caption-subject font-dark bold">Profile Account</span>
+                                        </div>
+                                        <ul class="nav nav-tabs responsive-tabs">
+                                            <li class="active">
+                                                <a href="#portlet_comments_1" data-toggle="tab" aria-expanded="true"> Personal Info </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#portlet_comments_2" data-toggle="tab" aria-expanded="false"> Change Photo </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#portlet_comments_3" data-toggle="tab" aria-expanded="false"> Change Password </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                    <div class="portlet-body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="portlet_comments_1">
+                                                <form>
+                                                    <div class="profile_information">
+                                                        <div class="content">
+                                                            <label>First Name</label>
+                                                            <input type="text" class="name" value="John">
+                                                        </div>
+                                                        <div class="content">
+                                                            <label>Last Name</label>
+                                                            <input type="text" class="name" value="Doe">
+                                                        </div>
+                                                        <div class="content last_contact">
+                                                            <label>Contact Number</label>
+                                                            <input type="text" class="name" value="123-456-7890">
+                                                        </div>
+                                                        <div class="content email_content">
+                                                            <label>Email </label>
+                                                            <input type="text" class="name" value="john_d@gmail.com" disabled="">
+                                                            <button class="chng_btn">Change</button>
+                                                        </div>
+                                                        <div class="save_cancle">
+                                                            <input type="submit" class="save" value="Save changes">
+                                                            <input type="reset" class="cancel" value="Cancel">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane" id="portlet_comments_2">
+                                                <div class="change_photo">
+                                                    <div class="no_img">
+                                                        <img src="../assets/layouts/layout/img/no_img.png" class="image-responsive" alt="image">
+                                                    </div>
+                                                    <div class="select_img">
+                                                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                            <span class="btn btn-default btn-file"><span>Select image</span><input type="file" /></span>
+                                                            <span class="fileinput-filename"></span><span class="fileinput-new"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="note_btn">
+                                                        <span>Note!</span>
+                                                        <p>Max image size upto 1mb</p>
+                                                    </div>
+                                                    <div class="save_cancle submit">
+                                                        <input type="submit" class="save" value="Submit">
+                                                        <input type="reset" class="cancel" value="Cancel">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="portlet_comments_3">
+                                                <form>
+                                                <div class="profile_information password_profile">
+                                                    <div class="content password">
+                                                         <label>Current Password</label>
+                                                         <input type="password" class="name">
+                                                     </div>
+                                                    <div class="content password">
+                                                         <label>New Password</label>
+                                                         <input type="password" class="name">
+                                                     </div>
+                                                    <div class="content password conform">
+                                                         <label>Confirm Password</label>
+                                                         <input type="password" class="name">
+                                                     </div>
+                                                    <div class="save_cancle">
+                                                        <input type="submit" class="save" value="Change Password">
+                                                        <input type="reset" class="cancel" value="Cancel">
+                                                    </div>
+                                                </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="contact_info">
+                            <div class="caption">
+                                <i class="icon-bubbles font-dark hide"></i>
+                                <span class="caption-subject font-dark bold">Contact Info</span>
+                            </div>
+                            <div class="contect_information">
+                                <div class="mail">
+                                    <img src="../assets/layouts/layout/img/mail_img.png" alt=""/>
+                                    <a href='mailto:john_d@gmail.com'>john_d@gmail.com</a>
+                                </div>
+                                <div class="phone">
+                                    <img src="../assets/layouts/layout/img/phn_img.png" alt=""/>
+                                    <a href='tel:123-456-7890'>123-456-7890</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+                <!-- END CONTENT -->
+                <!-- BEGIN QUICK SIDEBAR -->
+                <!-- END QUICK SIDEBAR -->
+           
+            <!-- END CONTAINER -->
+            
+       
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout/js/jquery.bootstrap-responsive-tabs.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/horizontal-timeline/horozontal-timeline.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/icheck/icheck.min.js" type="text/javascript"></script>
+        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <script src="../assets/pages/scripts/form-icheck.min.js" type="text/javascript"></script>
+        <script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+        <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/customscroll.js" type="text/javascript"></script>
+        <script>
+            $('.responsive-tabs').responsiveTabs({
+                accordionOn: ['xs', 'sm', 'md'] // xs, sm, md, lg
+
+            });
+            (function($) {
+                $(window).on("load", function() {
+                    $(".comment_box_main_content").mCustomScrollbar();
+                    $(".noti_scroll").mCustomScrollbar();
+                });
+            })(jQuery);
+        </script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+    </body>
+</html>

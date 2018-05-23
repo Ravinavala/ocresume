@@ -1,0 +1,369 @@
+@media (min-width: 768px){
+    .col-sm-3.right{float: right; margin-top: 8px;}
+}
+@media screen and (max-width:1600px){
+    .banner img{left: -11%;}
+    .contact_form { background-position: 50% 0%;}
+    .login_page_main{ padding-bottom: 0px;}
+}
+@media screen and (max-width:1399px){
+    .banner img{left: -27%;}
+}
+@media screen and (max-width:1199px){
+    .footer_icon{margin-right: 20px;}
+    .banner img{left: -48%;}
+    .banner_content h1{font-size: 40px;}
+    .package_bg h2 {  font-size: 18px; }
+    .package_bg {  background-size: 140px 59px;}
+    .package_class_info:hover .package_bg {background-size: 140px 52px;}
+    .package_class_info h3 { font-size: 34px; margin-bottom: 15px; }
+    .package_class_info h4 {  margin-top: 15px;}
+    .package_class_info a {  padding: 10px 30px; }
+    .package_class_info p { line-height: 1.5; margin-bottom: 10px; min-height: 110px;}
+    .resume_work {  margin-top: 45px;}
+    .resume_work h3 { line-height: 1.1; margin-bottom: 15px;}
+    .banner_content a{margin-top: 20px; }
+    .banner_content{    padding: 17.5% 0 6%;}
+    .right_slide_info p{font-size: 12px;}
+    .left_slide_info {    float: left;       display: inline-block;    width: 48%;}
+    .right_slide_info {    float: right;    display: inline-block;    width: 45%;    vertical-align: top;}
+    .packages_section{ padding: 30px 0;}
+    .icon_dec.location1 { padding-top: 0px;}
+    .forgot_pass{padding-bottom: 42.5%;}
+    .member_invoice h3{font-size: 26px;}
+    #pmpro_account #pmpro_account-membership h3, #pmpro_account #pmpro_account-profile h3, #pmpro_account #pmpro_account-invoices h3{font-size: 26px; margin: 0 0 15px 0;}
+    .package_class_info a.pmpro_btn{padding: 10px 19px;}
+    .other_step2{padding-top: 15px;}
+
+    .faculty_section .col-sm-9 h3{margin-bottom: 10px; font-size: 30px;}
+    section.faculty_section { padding: 45px 0;}
+    .faculty_section .popular_post .widget_recent_entries ul li { margin-bottom: 15px;}
+    .col-sm-3.right{margin-top: 40px;}
+    .archivs_page.faculty_section .col-sm-3.right { margin-top: 50px;}
+    .archivs_page.faculty_section .page-header h1.page-title{ font-size: 30px;}
+    .faculty_section .wpb_content_element{margin-bottom: 20px;}
+    section.resume_section { padding: 40px 0;}
+    .archivs_page.faculty_section .col-sm-9 img { height: 300px; min-height: 300px;}
+    .faculty_section.confrim h3{font-size: 30px;}   
+    .comments-area h2,.faculty_section h3,.resume_section h2,.reviewer_resume_section h3{font-size: 30px;}
+    .col-sm-9.stay_infodiv h3{font-size: 20px;}
+    .main_stay{margin-top:20px;}
+    .col-sm-9.stay_infodiv .stay_head img{margin-bottom: 0px;}
+    .main_stay p.ctct-form-footer{line-height: 1.4em;}
+}
+@media screen and (max-width:1024px){
+    .contact_form { background: url('../images/ipadcontct.png') no-repeat;  background-size: cover;background-position: 50% 0%;}
+}
+@media screen and (max-width:991px){
+    .footer_icon{margin-right: 2px;}
+    .banner img{left: -68%;}
+    .banner_content h1{font-size: 30px;}
+    .icon_dec.location:before{ width: 15px; background-size: 15px 20px;}
+    .icon_dec.phone:before{ width: 30px; background-size: 20px 20px;}
+    .icon_dec.email:before{ width: 25px;  background-size: 19px 17px;}
+    .resume_work h3 { font-size: 30px; }
+    .resume_work h2 { font-size: 32px;}
+    .resume_work { margin-top: 15px;}
+    .package_class_info { padding: 10px 15px;}
+    .package_bg h2 { font-size: 16px;}
+    .package_bg { background-size: 118px 53px;}
+    .package_class_info:hover .package_bg {background-size: 118px 46px;}
+    .resume_work h3,.resume_work h2 { font-size: 25px;}
+    .resume_work p { font-size: 14px;line-height: 1.3;}
+    .tips_for_job_bg,.happy_clients_section { padding-top: 30px; padding-bottom: 30px;}
+    .flex-control-nav { bottom: -60px;}
+    .get_resume_section h3 { font-size: 28px; margin-top: 65px;}
+    .contact_form .resume_title h3 {  margin-bottom: 10px;}
+    .txt_input_form { margin-top: 10px; margin-bottom: 10px;}
+    .txtarea_form { margin-top: 10px;}
+    .txt_btn_form { padding: 10px 15px;float: none; margin: 20px auto; display: table;}
+    .package_class_info h4 {min-height: 38px;}
+    .left_slide_info {    float: none;    display: inline-block;    width: 100%;    margin: 0 auto 20px;}
+    .flexslider .slides img{ margin: auto;}
+    .right_slide_info {    float: none;      width: 100%;    vertical-align: top;     text-align: center;}
+    .right_slide_info a{display: inline-block;}
+    .contact_main .txtarea_form{ margin-top: 0; }
+    .contact_main .txt_btn_form{ margin: 20px auto 0;}
+    .contact_main .icon_dec.location:before{ width: 35px;}
+    .contact_main .icon_dec.email:before{ width: 30px;}
+    .pmpro_checkout.other_step2 { display: table; width: 100%;}
+    .packages_section .pmpro_submit .sub_and_check_btn input.pmpro_btn.pmpro_btn-submit-checkout { margin-bottom: 0px; margin-left: 80.89px;}
+    .pmpro_form .pmpro_submit{width: 100%; display: inline-block;  margin-left: 0px !important; text-align: center;}
+    form.pmpro_form .pmpro_submit span.sub_and_check_btn {float: none !important;  display: inline-block;}
+    .pmpro_form .pmpro_checkout .pmpro_payment-cvv input {width: 100%; margin-bottom: 0;}
+    .pmpro_payment-cvv { margin-bottom: 15px;}
+    .forgot_pass {padding-bottom: 55.5%;}
+    .member_invoice h3{font-size: 24px;}
+    #pmpro_account #pmpro_account-membership h3, #pmpro_account #pmpro_account-profile h3, #pmpro_account #pmpro_account-invoices h3{font-size: 24px;}
+    .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{margin-top: 0;}
+    span.wpcf7-not-valid-tip{margin-top: -10px !important;}
+    .other_step2 .col-md-6, .other_step2 .col-md-3, .other_step2 .col-md-12 { float: left; width: 50%;}
+
+    .faculty_section .col-sm-9 h3 ,.resume_section h2,.reviewer_resume_section h3{ margin-bottom: 10px; font-size: 24px;}
+    .faculty_section .popular_post h3{font-size: 20px;}
+    .col-sm-3.right { margin-top: 35px;}
+    section.faculty_section { padding: 30px 0;}
+    .faculty_section .wpb_content_element { margin-bottom: 15px;}
+
+    section.resume_section { padding: 30px 0;}
+    .archivs_page.faculty_section .col-sm-9 img{margin-bottom: 0;}
+    .archivs_page.faculty_section .col-sm-9 p{margin-bottom: 0;}
+    .archivs_page .right_slide_info a{padding: 10px 30px; margin-bottom: 15px;}
+    .archivs_page.faculty_section .page-header h1.page-title { font-size: 25px;}
+    .archivs_page .page-header{margin-bottom: 10px;}
+    .faculty_section.confrim h3 { font-size: 24px;margin-top: 10px;}
+    div#pmpro_account-profile { width: 70%;}
+    .navbar-nav > li > a{padding: 4px 8px;font-size: 12px;}
+    /****************/
+    .package_class_info a { padding: 10px 20px;}
+    .buttons_sticky a.heading_a{padding-left: 0;}
+    .reviewer_resume_section.resume_section h4{font-size: 20px;}
+    .main_stay{padding: 20px 40px;}
+     .ctct-custom-form .ctct-button{margin-bottom: 7px;}
+      .stay_head h2{font-size: 140%;}
+}
+@media screen and (max-width:880px){
+    .banner img{left: -90%;}
+}
+@media screen and (max-width:768px){
+    form.pmpro_form input[type=text]#CVV{width: 100% !important;}
+    .pmpro_form .pmpro_checkout.other_step2 .input {width: 100%;}
+    .pmpro_submit .sub_and_check_btn input.pmpro_btn.pmpro_btn-submit-checkout{display: inline-block; width: auto; float: none;}
+    .packages_section .pmpro_submit .sub_and_check_btn input.pmpro_btn.pmpro_btn-submit-checkout{margin-left: 0;}
+    form.pmpro_form #pmpro_processing_message{width: 100%;}
+    .other_step2 h4, .other_step2 span.pmpro_thead-msg{width: 100%; text-align: center;margin-bottom: 10px;}
+    form.pmpro_form #pmpro_payment_information_fields .pmpro_thead-msg{float: none !important; text-align: center !important; display: inline-block;}
+    .packages_section p#pmpro_account_loggedin{text-align: center;}
+
+    form.pmpro_form #pmpro_payment_information_fields .pmpro_thead-msg{padding-top: 0;}
+
+}
+@media screen and (max-width:767px){
+    .right_header{float: none; text-align: center; margin: auto; display: block;}
+    .navbar-nav{margin: 8px 0px 0px 0px;}
+    .header_main{padding-bottom: 3px;}
+    .navbar-header{float: none;}
+    .footer_top{padding: 20px 0px 0px;}
+    .footer_top .col-sm-4 {margin-bottom: 15px; height: auto;    border-right: 0px solid #7f7f7f;}
+    .footer_bottom{padding-top: 14px;    padding-bottom: 14px;}
+    .header_main .left_header {margin-top: 0px;}
+    .header_main .buttons {  float: right;margin-right: -37px;}
+    .navbar-toggle{ margin-right: 10px; margin-top: 22px;}
+    .buttons a.heading_a { padding: 0px 4px;}
+    .col-sm-3.package {display: inline-block; vertical-align: top;}
+    .row.packages_info_signups {width: 100%;text-align: center; margin: 0 auto;}
+    .divider:after{margin-right: 0px;}
+
+    .banner img{width: 991px; left: -220px;}
+    .banner_content { top: 0; padding: 5% 0;}
+    .banner_content h1{font-size: 24px;    padding: 0px 10px; }
+    .header_main{background-color: #282727 !important;padding: 10px 0px 0px !important;}
+    .footer_bottom_left ,.footer_bottom_right{ float: none;  margin: 5px auto; display: table;}
+    .icon_dec.location:before,.icon_dec.email:before,.icon_dec.phone:before { width: 22px; }
+    .banner_content a { padding: 9px 20px;margin-top: 10px;}
+    .resume_work_right_img{   margin: auto; display: table; margin-top: 25px;}
+    .resume_work { text-align: center;}
+    .flex-control-nav { bottom: -50px;}
+    .tips_for_job_bg,.packages_section { padding-top: 30px;padding-bottom: 10px;}
+    .packages_info_signups { margin-top: 15px;}
+    .happy_clients_section {  padding-top: 30px; padding-bottom: 10px;}
+    .resume_title h3 {  font-size: 25px;     margin-bottom: 0px;}
+    .contact_form { padding-top: 30px; padding-bottom: 20px;}
+    .icon_dec.email:before,.icon_dec.phone:before { margin-top: 8.5px;}
+    .txt_input_form { padding: 10px 15px;}
+    .txtarea_form {  min-height: 90px;    padding: 10px 15px;}
+    .icon_dec.email:before { background-size: 18px 13px;}
+    .icon_dec.phone:before { background-size: 19px 18px;}
+    .get_resume_section h3 { margin-top: 20px;text-align: center;}
+    .banner_sliders { margin-top: 20px;}
+    .before_img_slide {margin: 20px auto;}
+    .happy_client_content h5 { font-size: 14px; margin-top: 15px;}
+    .happy_client_content p { line-height: 1.3; padding: 0px 30px;}
+    .image-right-resume { float: none; margin: 0px auto; margin-top: 10px;}
+    .resume_work_bg {padding-top: 20px;}
+    .package_class_info h3 { font-size: 30px; margin-bottom: 10px;    margin-top: 30px;}
+    .package_class_info p {  min-height: 65px;}
+    .package_class_info {padding: 10px 15px; min-height: 260px; max-width: 263px; margin: 20px auto; display: inline-block}
+    .package_bg {      margin: -20px auto; display: table; background-size: 170px 55px;  padding: 18px 38px;}
+    .package_class_info:hover .package_bg{  margin: -20px auto;  display: table; background-size: 170px 48px; padding: 18px 38px;}
+    .icon_dec p, .icon_dec a, .icon_dec a:hover, .icon_dec a:focus { text-align: center;}
+    .image-right-resume {float: none; max-width: 175px;}
+    .right_slide_info p { margin-bottom: 25px; }
+    .right_slide_info a { padding: 12px 35px; }
+    .header_main .col-sm-4{z-index: 1;}
+    .navbar-collapse.collapse {text-align: center;}
+    ul.nav.navbar-nav {float: none;}
+    .col-sm-6.resume_work_corporate { padding-right: 15px;}
+
+    .banner{ background-size: 100% 100% !important;}
+    .page_title h1{ font-size: 25px;}
+    .contact_main iframe { height: 250px;}
+    .icon_dec.location1{ text-align: center;}
+    .contact_main .icon_dec.location:before {    width: 15px;    display: block;    margin: 0 auto 10px;}
+    .contact_main .icon_dec.email:before {  width: 19px;   display: block;    margin: 0 auto;}
+    /*    .icon_dec.phone:before{display: block;    margin: 0 auto;}*/
+    .contact_main h4{ font-size: 18px;}
+    .banner.other_pages .banner_content{ display: none;}
+    .contact_main .txt_input_form,.login_page_main input[type="text"], .login_page_main input[type="password"] {    margin-bottom: 15px;    padding: 9px 20px;}
+    .c_form {    padding-top: 0;}
+    .contact_main .txtarea_form{ min-height: 120px;}
+    .login_page_main{ padding-top: 20px; padding-bottom: 30px;}
+    .login_page_main input#wp-submit{ float: none;}
+    .pmpro_form .pmpro_checkout.other_step2 .input {width: 100%;}
+    .pmpro_form .pmpro_checkout .pmpro_payment-cvv .input {width: 100%;}
+    .faculty_section .col-sm-9 p{text-align: center;}
+    .forgot_pass{ min-height: 678px;} 
+    #pmpro_cancel p{text-align: center;}
+    #pmpro_cancel .pmpro_actionlinks{width: 100%; text-align: center; display: inline-block;}
+    #pmpro_cancel .pmpro_actionlinks a{margin-bottom: 10px;}
+    .membershipe_teble{width: 100%; overflow-x: auto;}
+    .my_membership_cancel table{width: 800px ;}
+    .member_invoice h3{font-size: 22px;}
+    .invoice_table{width: 100%; overflow-x: auto;}
+    .member_invoice .invoice_table table{width: 800px;}
+    .member_invoice h3{width: 100%; text-align: center;}
+    .member_invoice ul{display: inline-block;width: 100%;}
+    .member_invoice .pmpro_a-print{display: inline-block; text-align: center; width: 100%;}
+    .member_invoice .pmpro_a-print:before{float: none;}
+    #pmpro_account #pmpro_account-membership h3, #pmpro_account #pmpro_account-profile h3, #pmpro_account #pmpro_account-invoices h3{font-size: 24px;}
+    .invoice_main{overflow-x: auto; width: 100%;}
+    .invoice_main table{width: 800px;}
+
+    .col-sm-3.right { margin-top: 0; margin-bottom: 15px;}
+    .faculty_section .popular_post .widget_recent_entries ul li { margin-bottom: 10px;text-align: center;}
+    .archivs_page.faculty_section .col-sm-3.right { margin-top: 0px;}
+    .archivs_page.faculty_section .col-sm-9 img {margin-bottom: 0; height: auto; width: 50%;  margin: 0 auto; display: table;min-height: 200px;}
+    .archivs_page .page-header{text-align: center; margin-left: 15px; margin-right: 15px;}
+    .archivs_page.faculty_section .col-sm-9 h3{font-size: 20px; text-align: center;}
+    .pmpro_invoice { width: 767px; min-width: 767px;}
+    .tbl_scroll { width: 100%; display: inline-block; position: relative; overflow: auto;}
+    .nav-next.alignright{margin-top: 15px;}
+    .faculty_section.confrim h3 { font-size: 20px;}
+    div#pmpro_account-profile { width: 100%;}
+    #pmpro_account #pmpro_account-membership table .pmpro_actionlinks {float: none; position: relative; top: 45px; right: auto; left: 0; text-align: left;}
+    .comments-area h2,.faculty_section h3,.resume_section h2,.reviewer_resume_section h3{font-size: 26px;text-align: center;}
+    #commentform  p.comment-notes{text-align: center;}
+    .comment-form input[type="text"], .comment-form textarea, .popular_post  input[type="search"]{padding: 9px 15px;margin-bottom: 10px;}
+    .comment-form textarea{height: 100px;}
+    .form-submit input[type="submit"]{float: none;margin: 0 auto;display: block;}
+    .faculty_section .col-sm-9 ul li:before,
+    ul.resume_detail li:before{ content: ''; width: 4px; height: 4px;border-radius: 50%; background: #7f7f7f; display: inline-block; vertical-align: middle;  margin-right: 5px;}
+    .faculty_section .col-sm-9 ul li, ul.resume_detail li{list-style: none;margin-bottom: 10px;}
+    .faculty_section .col-sm-9 ul {padding-left: 0; text-align: center;}
+    .faculty_section .popular_post .widget_recent_entries ul li:before, 
+    .faculty_section .popular_post .widget_archive ul li:before{float: none;}
+    .faculty_section .popular_post .widget_archive ul,
+    .serch_section a,.reviewer_resume_section p, ul.resume_detail li{text-align: center;display: block;}
+    .comments-area ol{padding-left: 0;margin: 0 auto;display: block;width: 200px;}
+    .reviewer_resume_section.resume_section h4{text-align: center;display: block;margin: 20px auto;}
+    .reviewer_resume_section img{margin: 0 auto 10px;display: block;float: none;}
+    .resume_section .pdf_a{display: block;text-align: center;margin-bottom: 5px;font-size: 14px;}
+    .reviewer_resume_section p{margin-bottom: 5px;margin-top: 0;}
+    .reviewer_resume_section p a { margin-bottom: 0;font-size: 14px;}
+    .resume_img,.resume_img_text {width: 100%;}
+    .entry-title{font-size: 18px;text-align: center;}
+    .entry-title:after{margin: 4px auto 0;width: 100px;}
+    .reviewer_resume_section .detail h6{text-align: center;}
+    .resume_section  ul.resume_detail { padding-left: 0;}
+    .reviewer_resume_section .project_text { margin-top: 30px;}
+    .reviewer_resume_section .few_text {margin-top: 0;}
+    .comment-meta.commentmetadata { display: block; float: none;}
+    .faculty_section.serch_section  .serch_title{font-size: 18px;text-align: center;}
+    .faculty_section .serch_contain img{ display: block; margin: auto;}
+   .faculty_section .serch_contain .fa_right{ display: block; margin: 0 auto 10px; float: none;}
+     .stay_infodiv h3:before{width: 15%; left: auto;}
+.ctct-custom-form label{text-align: left;}
+.ctct-custom-form .ctct-form-errorMessage{font-size: 14px;}
+}
+@media screen and (max-width:638px){
+    .package_class_info{max-width: 222px;}
+    .member_invoice h3{font-size: 20px;}
+}
+@media screen and (max-width:567px){
+    .left_header img{ max-width: 90%;}
+    .buttons .item:before,.buttons .login:before{   margin-right: 5px; }
+    .banner img{width: 991px; left: -320px;}
+    .banner_content h1 {font-size: 20px;}
+    .resume_work h2 { font-size: 30px;}
+    .resume_work h3 { font-size: 27px; margin-bottom: 15px;}
+    .resume_work p { font-size: 14px;  line-height: 1.4;}
+    .left_slide_info { float: none;  margin-right: 0px; margin: 10px auto;display: table;}
+    .right_slide_info p { margin-bottom: 20px;  margin-top: 10px; line-height: 1.4;text-align: center;}
+    .happy_client_content p { font-size: 14px;text-align: center;  margin-top: 0px;  line-height: 1.5;}
+    .get_resume_section h3 { font-size: 24px;}
+    .happy_client_content p {font-size: 14px;line-height: 1.4;}
+    .resume_work h3, .resume_work h2 { font-size: 22px;}
+    .right_slide_info h4 { font-size: 16px; line-height: 18px; text-align: center;}
+    .right_slide_info a {padding: 9px 20px;  margin: auto; display: table;}
+    .resume_title h3 { font-size: 24px;}
+    .package_class_info a { padding: 9px 20px;}
+    .package_class_info h3 { font-size: 24px;}
+    .contact_form {  background: url('../images/iphone_contact.png') no-repeat; background-size: cover;background-position: 50% 0%;}
+    .banner_content {top: 0px;}
+    #pmpro_account #pmpro_account-membership h3, #pmpro_account #pmpro_account-profile h3, #pmpro_account #pmpro_account-invoices h3{font-size: 20px;}
+    .package_class_info a.pmpro_btn{padding: 9px 19px;}
+    .other_step2 .col-md-6, .other_step2 .col-md-3, .other_step2 .col-md-12{width: 100%;}
+    .other_step2 input, .other_step2 select{margin-bottom: 15px;}
+    .other_step2 h4, .other_step2 span.pmpro_thead-msg{margin-top: 0;}
+    .other_step2 h4{font-size: 20px;}
+    .sub_and_check_btn input[type="submit"]{padding: 8px 16px;}
+    .checkout_step1 p{margin-bottom: 10px;}
+
+    .faculty_section .col-sm-9 img{height: 250px;}
+    .archivs_page.faculty_section .col-sm-9 img{width: 60%;}
+    .confrim p { text-align: center;}
+    .faculty_section.confrim h3{width:100%; text-align: center;}
+    .confrim a.pmpro_a-print{margin-top: 1%;margin-bottom: 1%;}
+    .confrim ul li strong { width: 130px;}
+    .confrim ul{padding: 10px;}
+    .comments-area h2,.faculty_section h3,.resume_section h2,.reviewer_resume_section h3{font-size: 24px;}
+    .ctct-custom-form p{margin-bottom: 22px;}
+     .ctct-custom-form .ctct-form-errorMessage{font-size: 14px;}
+}
+@media screen and (max-width:480px){
+    .footer_bottom_right img { margin-right: 0px;}
+    .banner img{width: 991px; left: -420px;}
+    .before_img_slide:before ,.before_img_slide:after{ width: 80px;  margin-right: 15px;}
+    .happy_client_content p { padding: 0px 10px;}
+    .txt_input_form {  padding: 8px 10px; margin-top: 8px;margin-bottom: 8px;}
+    .txtarea_form { min-height: 80px; margin-top: 8px;padding: 8px 10px;}
+    .header_main .col-sm-4{width: 50%;}
+    .heading_a {font-size: 13px;}
+    .forgot_pass{width: 100%;}
+    .forgot_pass .button_div .btn{float: none;}
+    .forgot_pass .button_div{width: 100%; text-align: center;}
+    .forgot_pass .login_now{width: 100%; text-align: center; padding-top: 10px;}
+
+}
+@media screen and (max-width:479px){
+    .heading_a { font-size: 12px;}
+    .buttons a.heading_a { padding: 0;}
+    .buttons .item:before, .buttons .login:before { margin-right: 3px;}
+    .checkout_step1 .pmpro_thead-name{font-size: 16px;}
+    .faculty_section .col-sm-9 h3{font-size: 22px; text-align: center;}
+    .resume_section tr td:first-child{width: 150px;}
+    .resume_section td{word-break: break-word;font-size: 14px;}
+    .resume_section td a{font-size: 14px;}
+    .confrim ul li strong { width: 100%; text-align: center;}
+    .confrim ul li{text-align: center;}
+    .nav-next.alignright a { padding: 6px 15px; font-size: 14px;}
+
+    #pmpro_account #pmpro_account-membership table .pmpro_actionlinks { float: none; position: absolute; top: 60px; right: auto; left: 0;  text-align: center;}
+    #pmpro_account #pmpro_account-membership .pmpro_actionlinks {text-align: center; width: 100%; display: inline-block; float: none; margin-top: 40px;}
+    .confrim #pmpro_account .pmpro_box{margin: 0em 0;}
+    .confrim #pmpro_account #pmpro_account-profile h3{margin: 0 0 10px 0;}
+    .comments-area h2,.faculty_section h3,.resume_section h2,.reviewer_resume_section h3{font-size: 20px;}
+    .reviewer_resume_section.resume_section h4 {font-size: 16px;}
+     .stay_head h2, .ctct-custom-form .ctct-button{font-size: 120%;}
+     .main_stay{padding:20px 10px;}
+     .col-sm-9.stay_infodiv form{min-width: auto;}
+}
+@media screen and (max-width:385px){
+    .left_header img{margin: 0 auto;display: block;width: 140px;}
+    .header_main .left_header{float: none;}
+    .header_main .col-sm-4 {width: 100%;}
+    .header_main .buttons {float: none; margin-right: -48px;}
+    .navbar-header{text-align: center;}
+    .navbar-toggle {margin-right: 0;margin-top: -36px;z-index: 1111;}
+    .buttons span{margin-left: 5px;}
+}

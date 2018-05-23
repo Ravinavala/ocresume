@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8" />
+        <title>Reviewer Dashboard</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/customscroll.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="../assets/layouts/layout/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/style_b.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/style_t.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME LAYOUT STYLES -->
+    <!-- END HEAD -->
+
+    <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white notification_page_content">
+        <div class="page-wrapper page_notification">
+            <!-- BEGIN HEADER -->
+            <div class="page-header navbar navbar-fixed-top">
+                <!-- BEGIN HEADER INNER -->
+                <div class="page-header-inner ">
+                    <!-- BEGIN LOGO -->
+                    <div class="page-logo">
+                        <a href="reviewer_dashboard.html">
+                            <img src="../assets/layouts/layout/img/logo_dashboard.png" alt="logo" class="logo-dashboard" /> </a>
+                        <div class="menu-toggler sidebar-toggler">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- END LOGO -->
+                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span></span>
+                    </a>
+                    <!-- END RESPONSIVE MENU TOGGLER -->
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+                    <div class="top-menu">
+                        <ul class="nav navbar-nav pull-right">
+                            <!-- BEGIN NOTIFICATION DROPDOWN -->
+                            <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                                    <i class=""><img src="../assets/layouts/layout/img/bell_img.png" alt=""></i>
+                                    <span class="badge badge-default"> 4 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                        <h3>
+                                            <span class="bold bold_pending">4 Pending</span> Notifications</h3>
+                                        <a href="reviewer_notification.html">View All</a>
+                                    </li>
+                                    <li>
+                                        <div class="noti_scroll">
+                                            <ul class="dropdown-menu-list scroller" style="height: 201px;" data-handle-color="#637283">
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 1</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 2</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 3</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">                                                 
+                                                        <span class="details">Notification 4</span>
+                                                    </a>
+                                                </li>                                        
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                                
+							
+                            <li class="dropdown dropdown-user">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img alt="" class="img-circle" src="../assets/layouts/layout/img/men_img.png" />
+                                    <span class="username username-hide-on-mobile john_doe"> John Doe </span>
+                                    <i class=""> <img src="../assets/layouts/layout/img/arrow.png" alt=""/></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-default">
+                                    <li>
+                                        <a href="reviewer_profile.html">
+                                            <i class="icon-user"></i> My Profile </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="icon-key"></i> Log Out </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="page-container">
+                <div class="page-sidebar-wrapper">
+                    <div class="page-sidebar navbar-collapse collapse">
+                        <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                            <li class="sidebar-toggler-wrapper hide">
+                                <div class="sidebar-toggler">
+                                    <span></span>
+                                </div>
+                            </li>
+                            <li class="sidebar-search-wrapper">
+                                <form class="sidebar-search  " action="page_general_search_3.html" method="POST">
+                                    <a href="javascript:;" class="remove">
+                                        <i class="icon-close"></i>
+                                    </a>                                  
+                                </form>
+                                <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                            </li>
+                            <li class="nav-item start active open">
+                                <a href="reviewer_dashboard.html" class="nav-link nav-toggle">
+                                    <i class="icon-image-home"></i>
+                                    <span class="title">Dashboard</span> 																
+                                </a>                           
+                            </li>
+<!--                            <li class="nav-item start open">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-student-profile"></i>
+                                    <span class="title">Reviewer Profile</span>									
+                                </a>                          
+                            </li>
+                            <li class="nav-item start open">
+                                <a href="javascript:;" class="nav-link nav-toggle">
+                                    <i class="icon-setting"></i>
+                                    <span class="title">Settings</span> 
+																	
+                                </a>                         
+                            </li>-->
+                            <li class="nav-item start open">
+                                <a href="reviewer_history.html" class="nav-link nav-toggle">
+                                    <i class="icon-history"></i>
+                                    <span class="title">History</span> 
+																	
+                                </a>                         
+                            </li>
+							               
+                        </ul>                          
+                        <!-- END SIDEBAR MENU -->
+                        <!-- END SIDEBAR MENU -->
+                    </div>
+                </div>
+                <!-- BEGIN CONTENT -->
+                <div class="page-content-wrapper">
+                    <!-- BEGIN CONTENT BODY -->
+                    <div class="page-content">
+                        <!-- BEGIN PAGE HEADER-->
+                        <!-- BEGIN PAGE BAR -->
+                        <div class="page-bar">
+                            <ul class="page-breadcrumb">
+                                <li>
+                                    <a href="reviewer_dashboard.html">Home</a>
+                                    <i class=""> <img src="../assets/layouts/layout/img/dot_img.png" alt=""/></i>
+                                </li>
+                                <li>
+                                    <a href="reviewer_dashboard.html">Dashboard</a>
+                                    <i class=""> <img src="../assets/layouts/layout/img/dot_img.png" alt=""/></i>
+                                </li>
+                                <li>
+                                    <span>Jordyn Mackool</span>
+                                </li>
+                            </ul>
+                            <div class="dat_calender">
+                                <div class="page-toolbar">
+                                    <div class="input-group input-medium date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                        <span class="input-group-btn">
+                                            <button class="btn default" type="button" ></button>
+                                        </span>
+                                        <input type="text" class="form-control" readonly placeholder="September 29, 2016">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PAGE BAR -->
+                        <!-- BEGIN PAGE TITLE-->
+                        <h1 class="page-title"> Jordyn Mackool </h1>
+                        <!-- END PAGE TITLE-->
+                        <!-- END PAGE HEADER-->
+                        <div class="workspace reviewer_workspace">
+                            <div class="workspace_top">
+                                <div class="workspace_right">
+                                    <div class="workflow_table">
+                                        <div class="table">
+                                            <div class="tbody">
+                                                <div class="tr">
+                                                    <div class="th">Package : </div>
+                                                    <div class="td">Package1</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">Purchase Date : </div>
+                                                    <div class="td">September 24, 2016</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">Workflow Status :  </div>
+                                                    <div class="td">New Resume</div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">Reviewer :</div>
+                                                    <div class="td">John Doe <a class="assign" href="#assign" data-toggle="modal">Assign to</a></div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="th">View Resume :</div>
+                                                    <div class="td">None</div>
+                                                </div>                                                
+                                                <div class="tr">
+                                                    <div class="th">Download Resume :</div>
+                                                    <div class="td">None</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="workspace_bottom">
+                                <div class="w_revised">
+                                    <label>What are your goals with having a resume created/revised?</label>
+                                    <p>Making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, </p>
+                                </div>
+                                <h4>Resume originally submitted:</h4>
+                                <a class="red_text" href="javascript:void(0);" >Jordyn Mackool_resume.pdf</a>
+                                <p>Please complete the following fields and submit when ready for review.</p>
+                                <div class="workflow_form">
+                                    <div class="panel-group accordion" id="accordion3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading active">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_1"> Personal Informational </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_1" class="panel-collapse in" >
+                                                <div class="panel-body">    
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Name*</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Phone*</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Email*</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>School*</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>City</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <div class="c_right_left">
+                                                                    <label>Degree*</label>
+                                                                    <input type="text" placeholder="Type here">                                                                
+                                                                </div>  
+                                                                 <div class="c_right_right">
+                                                                     <label>Graduation Date*</label>
+                                                                    <div class="input-group input-medium date date-picker" data-date="12-02-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
+                                                                        <input type="text" class="form-control" readonly placeholder="mm/dd/yyyy">
+                                                                        <span class="input-group-btn">
+                                                                            <button class="btn default" type="button">
+                                                                                <i class="fa fa-calendar"></i>
+                                                                            </button>
+                                                                        </span>
+                                                                    </div>
+                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Link to LinkedIn*</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Endorsement*</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <label>Description of Job They Want</label>
+                                                            <textarea placeholder="Type here"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_2"> Few Things About Me </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_2" class="panel-collapse collapse ">
+                                                <div class="panel-body" >      
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Thing 1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label> Thing 2</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Thing 3</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Thing 4</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Thing 5</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Thing 6</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_3" > Project(s) </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_3" class="panel-collapse collapse " >
+                                                <div class="panel-body">  
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Project 1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Background</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Objective</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Execution</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Results</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>File input</label>
+                                                                <input type="file">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New Project</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_4" > Work Experience(s) </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_4" class="panel-collapse collapse"> 
+                                                <div class="panel-body">  
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Title</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Company</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>City</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>State</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Years</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Description of Job They Want*</label>
+                                                                <textarea placeholder="Type here"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_5" > Skills </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_5" class="panel-collapse collapse " >
+                                                <div class="panel-body">   
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Skill 1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Skill 2</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Skill 3</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New Skill</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_6" >Courses and Certifications</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_6" class="panel-collapse collapse " >
+                                                <div class="panel-body">    
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Course 1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Course 2</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Course 3</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_7" > Knowledge of Software </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_7" class="panel-collapse collapse " >
+                                                <div class="panel-body">           
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Software 1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Software 2</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Software 3</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_8" > Honors </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_8" class="panel-collapse collapse " >
+                                                <div class="panel-body"> 
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Honor 1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Honor 2</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Honor 3</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_9" > Activities </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_9" class="panel-collapse collapse " >
+                                                <div class="panel-body">  
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Activity 1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>Activity 2</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>Activity 3</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_10" > Interests </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_10" class="panel-collapse collapse " >
+                                                <div class="panel-body">  
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>1</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                            <div class="c_right">
+                                                                <label>2</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_row">
+                                                            <div class="c_left">
+                                                                <label>3</label>
+                                                                <input type="text" placeholder="Type here">
+                                                            </div>                                                            
+                                                        </div>                                                        
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapse_3_11" > References </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse_3_11" class="panel-collapse collapse " >
+                                                <div class="panel-body"> 
+                                                    <form>
+                                                        <div class="c_row">
+                                                            <div class="c_left others_text">
+                                                                <label>Reference 1</label>
+                                                                <textarea>Michael Oyster, 
+Olivet College Executive in Residence, 
+Ph: 269-749-7610, 
+moyster@att.net
+                                                               </textarea>
+                                                            </div>
+                                                            <div class="c_right others_text">
+                                                                <label>Reference 2</label>
+                                                                <textarea>Mike Kneffel, 
+2XL Company, 
+Ph: 248-333-2425, 
+mike@2XLcompany.com
+                                                                </textarea>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="grey_row">
+                                                    <div class="grey_row_left">
+                                                        <button value="" class="grey_btnnn"> + Add New</button>
+                                                    </div>
+                                                    <div class="grey_row_right">
+                                                        <input type="submit" value="Save" class="red_btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="submit_btnn workf_form">
+                                    <a href="#publish" class="red_btn right_btn" data-toggle="modal">Publish</a>
+                                    <a href="#feedback" class="red_btn" data-toggle="modal">Return for Feedback</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="workspace_mainsuper_right">
+                            <div class="comment_box_main">
+                                 <div class="comment_box_main_title">
+                                     <h2>Comment Box</h2>
+                                 </div>
+                                <div class="comment_box_main_content">
+                                    <div class="chat_right">
+                                        <div class="chat_image">
+                                            <img src="../assets/layouts/layout/img/comment_img1.png" alt="">
+                                        </div>
+                                        <div class="chat_text">
+                                            <p>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</p>
+                                            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                                            <p>1914 translation by H. Rackham</p>
+                                            <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                                            <span>10:47AM, September 09, 2016</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="chat_form">
+                                    <textarea placeholder="Type here"></textarea>
+                                    <input type="submit" value="submit" class="red_btn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                        
+                </div>
+            </div>
+            <div id="publish" class="modal fade modal_popup" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="popup_content">
+                                <h4>Resume Completed</h4>
+                                <div class="popup_data">
+                                    <form>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+                                        <input type="submit" class="red_btn" value="Confirm to Publish">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="assign" class="modal fade modal_popup" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="popup_content">
+                                <h4>Assign to</h4>
+                                <div class="popup_data">
+                                    <form>
+                                        <select>
+                                            <option>-Select other Reviewer-</option>
+                                        </select>
+                                        <input type="submit" class="red_btn" value="Assign Now">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="feedback" class="modal fade modal_popup" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="popup_content">
+                                <h4>Return for Feedback</h4>
+                                <div class="popup_data">
+                                    <p>Please Enter Your Comment In Comment Box and submit to required changes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- END CONTENT -->
+                <!-- BEGIN QUICK SIDEBAR -->
+                
+                <!-- END QUICK SIDEBAR -->
+            </div>
+            <!-- END CONTAINER -->
+       
+        <!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout/js/jquery.bootstrap-responsive-tabs.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/serial.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/pie.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/radar.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/themes/light.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/themes/patterns.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amcharts/themes/chalk.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/ammap/ammap.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/amcharts/amstockcharts/amstock.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/horizontal-timeline/horozontal-timeline.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+         <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="../assets/global/plugins/icheck/icheck.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/pages/scripts/form-icheck.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="../assets/layouts/global/scripts/customscroll.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+        <script>
+            $('.accordion .panel-title a').click(function () {
+               // $('.accordion .panel-title a').parent().parent().removeClass('active');
+               if($(this).parent().parent().hasClass('active')){
+               
+                   $(this).parent().parent().removeClass('active').siblings();
+               }
+               else{
+                $('.accordion .panel-title a').parent().parent().removeClass('active');
+                    $(this).parent().parent().addClass('active').siblings();
+               }                
+            });
+            (function($) {
+                $(window).on("load", function() {
+                    $(".comment_box_main_content").mCustomScrollbar();
+                    $(".noti_scroll").mCustomScrollbar();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>
